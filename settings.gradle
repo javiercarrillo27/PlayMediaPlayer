@@ -1,0 +1,19 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "PlayMedia"
+include ':app'
+
+gradle.ext.exoplayerModulePrefix = 'exoplayer-'
+//apply from: file("/home/roberto/StudioProjects/ExoPlayer/core_settings.gradle")
